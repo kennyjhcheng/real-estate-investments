@@ -1,0 +1,128 @@
+---
+---
+
+@import "minima";
+
+// Custom variables
+$brand-color: #2c5f2d;
+$brand-light: #97bc62;
+$accent-color: #1e3a5f;
+
+// Header styling
+.site-header {
+    background: linear-gradient(135deg, $brand-color 0%, $brand-light 100%);
+    border-bottom: none;
+
+    .site-title {
+        color: white;
+        font-weight: 600;
+
+        &:hover {
+            color: rgba(255,255,255,0.9);
+        }
+    }
+
+    .site-nav a {
+        color: rgba(255,255,255,0.9);
+        font-weight: 500;
+
+        &:hover {
+            color: white;
+        }
+    }
+}
+
+// Table styling
+table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+
+    th {
+        background-color: $brand-color;
+        color: white;
+        padding: 12px;
+        text-align: left;
+        font-weight: 600;
+    }
+
+    td {
+        padding: 10px 12px;
+        border-bottom: 1px solid #e8e8e8;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f8f9fa;
+    }
+
+    tr:hover {
+        background-color: #e8f4e8;
+    }
+}
+
+// Blockquote styling
+blockquote {
+    border-left: 4px solid $brand-light;
+    color: #555;
+    background: #f9f9f9;
+    padding: 15px 20px;
+    margin: 20px 0;
+}
+
+// Checkbox lists
+ul li {
+    input[type="checkbox"] {
+        margin-right: 8px;
+    }
+}
+
+// Header styling
+h1, h2, h3 {
+    color: $accent-color;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 50px;
+        height: 3px;
+        background: $brand-light;
+        margin-top: 8px;
+    }
+}
+
+// Quick stats box
+.quick-stats {
+    background: #f0f7f0;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+// Footer
+.site-footer {
+    background: #1a1a1a;
+    color: #888;
+    padding: 30px 0;
+
+    p {
+        margin: 0;
+        text-align: center;
+        font-size: 14px;
+    }
+}
+
+// Links
+a {
+    color: $brand-color;
+
+    &:hover {
+        color: $accent-color;
+    }
+}
+
+// Horizontal rule
+hr {
+    border: none;
+    border-top: 2px solid #e8e8e8;
+    margin: 30px 0;
+}

@@ -1,0 +1,45 @@
+title: "Real Estate Investment Portfolio"
+description: "Documentation, planning, and visualization of real estate investment pursuits"
+author: "Kenny Cheng & Partners"
+email: your-email@example.com
+baseurl: "/real-estate-investments"
+url: "https://kennyjhcheng.github.io"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Collections
+collections:
+  research:
+    output: true
+    permalink: /:collection/:name/
+  properties:
+    output: true
+    permalink: /:collection/:name/
+  strategies:
+    output: true
+    permalink: /:collection/:name/
+
+# Navigation
+navigation:
+  - title: Home
+    url: /
+  - title: Research
+    url: /research/
+  - title: Strategies
+    url: /strategies/
+  - title: Properties
+    url: /properties/
+  - title: Resources
+    url: /resources/
+
+# Custom variables
+founded: 2025
+capital: "$100,000"
+location_focus: "Michigan"
+team_size: "3 Partners"
